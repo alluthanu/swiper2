@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height:100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        border-radius:20px;
+      
+       
+        
+
+        /* Center slide text vertically */
+        
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        justify-items: center;
+        border-radius:20px;
+      }
+      .swiper-wrapper img{
+         width:15rem;
+         height:15rem;
+  
+      }
+      .navbar{
+        justify-content: space-between;
+        display: flex;
+        padding-left:50rem; 
+        padding-top:2px;
+      }
+      .navbar a{
+        text-align: center;
+        text-shadow:5cm;
+        text-transform:uppercase;
+        text-decoration-line: none;
+        justify-content:space-between;
+        padding-left:50px; 
+        padding-top: 2rem;
+      }
+      .navbar a:hover{
+        background-color: black;
+        border-radius: 10px;
+           height:40px; 
+         line-height:10px; 
+         text-indent: 2rem;
+         color:#eee;
+         text-align: center;
+         /* margin:0px; */
+        /* padding:0px 22px; 
+        display:flex; 
+       font-size:0.8rem; */
+        text-transform:uppercase;
+       font-weight: 500px;
+      }
+      .image1 img{
+         border-radius: 50%;
+      }
+      .image3{
+        display:flex;
+        justify-content: space-between;
+      }
+      .mater{
+        text-align: center;
+      }
+      .mater2 h2{
+        color:rgb(156, 22, 127);
+        font-weight: 300px;
+        font-style: italic;
+        padding-left:10px;
+      }
+      .swiper-slide{
+        display:block;
+      } 
+      .something button{
+        background-color: pink;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="image3">
+      <div class="image1">
+        <img src="slide/cs.png" alt="" srcset="">
+      </div>
+      <div class="image2">
+        <nav class="navbar">
+        <a href="#">Blog</a>
+        <a href="#">gallery</a>
+        <a href="#">features</a>
+        <a href="#">search</a>
+        <a href="#"></a>
+        </nav>
+      </div>
+     </div>
+    </section>
+    <section>
+      <div class="mater">
+      <h1>CATEGORIES</h1>
+      </div>
+      <div class="mater2">
+        <h2>Favourites</h2>
+      </div>
+    </section>
+    <section>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        <a href="">
+          <img src="slide/cake.jpg" alt="">
+           <div class="something">
+               <h3>cake</h3>
+               <h3>$500</h3>
+               <button>add to cart</button>
+           </div>
+        </a>
+      </div>
+        <div class="swiper-slide">
+          <img src="slide/cake2.jpg" alt="">
+          <div class="something">
+              <h3>cake</h3>
+              <h3>$600</h3>
+              <button>Add to cart</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="slide/cake5.jpg" alt="">
+          <div class="something">
+            <h3>cake</h3>
+            <h3>$600</h3>
+            <button>Add to cart</button>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="slide/donut.jpg" alt="">
+          <div class="something">
+            <h3>donut</h3>
+            <h3>$600</h3>
+            <button>Add to cart</button>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="slide/donut2.jpg" alt="">
+          <div class="something">
+            <h3>donut</h3>
+            <h3>$600</h3>
+            <button>add to cart</button>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="slide/donut3.jpg" alt="">
+          <div class="something">
+            <h3>donut</h3>
+            <h3>$600</h3>
+            <button>addt to cart</button>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="slide/donut3.jpg" alt="">
+          <div class="something">
+            <h3>donut</h3>
+            <h3>$600</h3>
+            <button> add to cart</button>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="slide/donut4.jpg" alt="">
+          <div class="something">
+            <h3>donut</h3>
+            <h3>$600</h3>
+            <button> add to cart</button>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="slide/chocolates.webp" alt="">
+          <div class="something">
+            <h3>chocolates</h3>
+            <h3>$600</h3>
+            <button> add to cart</button>
+        </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+      <div class="mater2">
+      <h2>Accesories</h2>
+      </div>
+    </section>
+
+    <section>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="slide/lux.jpg" alt="">
+             <div class="something">
+                 <h3>lux</h3>
+                 <h3>$500</h3>
+                 <button> add to cart</button>
+             </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slide/mysoresandel.jpg" alt="">
+            <div class="something">
+                <h3>Mysoresandel</h3>
+                <h3>$600</h3>
+                <button> add to cart</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slide/samnttor.jpg" alt="">
+            <div class="something">
+              <h3>santhoor</h3>
+              <h3>$600</h3>
+              <button> add to cart</button>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slide/shampoo.jpg" alt="">
+            <div class="something">
+              <h3>shampoo</h3>
+              <h3>$600</h3>
+              <button> add to cart</button>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slide/chocolates.webp" alt="">
+            <div class="something">
+              <h3>chocolates</h3>
+              <h3>$600</h3>
+              <button> add to cart</button>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slide/clinicplus.jpg" alt="">
+            <div class="something">
+              <h3>clinicplus/h3>
+              <h3>$600</h3>
+              <button> add to cart</button>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slide/conditioner.jpg" alt="">
+            <div class="something">
+              <h3>Conditioner</h3>
+              <h3>$600</h3>
+              <button> add to cart</button>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slide/dove.jpg" alt="">
+            <div class="something">
+              <h3>dove</h3>
+              <h3>$600</h3>
+              <button> add to cart</button>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slide/vaseline.jpg" alt="">
+            <div class="something">
+              <h3>vaseline</h3>
+              <h3>$600</h3>
+              <button> add to cart</button>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      </section>
+      <br>
+      <br>
+      <br>
+
+      
+      <section>
+        <div class="mater2">
+        <h2>Toys</h2>
+        </div>
+      </section>
+      <section>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="slide/teady1.jpg" alt="">
+               <div class="something">
+                   <h3>teadybear</h3>
+                   <h3>$500</h3>
+                   <button>Add to cart</button>
+               </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="slide/teady2.jpg" alt="">
+              <div class="something">
+                  <h3>teadybear</h3>
+                  <h3>$600</h3>
+                  <button> add to cart</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="slide/teady3.jpg" alt="">
+              <div class="something">
+                <h3>toy</h3>
+                <h3>$600</h3>
+                <button> add to cart</button>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="slide/teady4.jpg" alt="">
+              <div class="something">
+                <h3>teadybear</h3>
+                <h3>$600</h3>
+                <button> add to cart</button>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="slide/teady5.jpg" alt="">
+              <div class="something">
+                <h3>teadybear</h3>
+                <h3>$600</h3>
+                <button> add to cart</button>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="slide/teady6.jpg" alt="">
+              <div class="something">
+                <h3>teadybear/h3>
+                <h3>$600</h3>
+                <button> add to cart</button>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="slide/teady7.jpg" alt="">
+              <div class="something">
+                <h3>teadybear</h3>
+                <h3>$600</h3>
+                <button> add to cart</button>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="slide/teady8.jpg" alt="">
+              <div class="something">
+                <h3>teadybear</h3>
+                <h3>$600</h3>
+                <button> add to cart</button>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="slide/teady1.jpg" alt="">
+              <div class="something">
+                <h3>teadybear</h3>
+                <h3>$600</h3>
+                <button> add to cart</button>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        </section>
+  
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        slidesPerGroup: 5,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
+
+
+    
+</body>
+</html>
